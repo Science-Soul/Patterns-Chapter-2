@@ -9,11 +9,11 @@ public class ScoreUI : MonoBehaviour
 
     void Start()
     {
-        score.text += 0;
+        score.text += Manager.Instance.score;
     }
 
     void Update()
     {
-        
+        score.text = "Score: " + Manager.Instance.score;
     }
 }
