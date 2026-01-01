@@ -17,6 +17,8 @@ public class Manager : MonoBehaviour
         {
             Instance = this;
             Debug.Log("New instance initialized...");
+
+            DontDestroyOnLoad(this.gameObject);
         }
         else if (Instance != this)
         {
