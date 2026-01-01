@@ -8,7 +8,7 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Manager.Instance.score++;
+            GenericManager.Instance.score++;
 
             Destroy(this.gameObject);
             Debug.Log("Item collected!");
