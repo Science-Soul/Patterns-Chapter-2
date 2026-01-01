@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        start.onClick.AddListener(GenericManager.Instance.StartGame);
+        start.onClick.AddListener(SOManager.Instance.StartGame);
     }
 
     // Update is called once per frame
